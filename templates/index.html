@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аварийный доступ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Миссия Колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+
+        <div class="emergency-block">
+            <div class="emblem">
+                <img src="{{ url_for('static', filename='img/img_2.png') }}" alt="Эмблема">
+            </div>
+            <h2 class="emergency">Аварийный доступ</h2>
+        </div>
+
+        <form method="POST" action="/login">
+            <div>
+            <label>Id астронавта</label>
+                </div>
+            <input type="text" name="astronaut_id" required><br><br>
+
+            <div><label>Пароль астронавта</label></div>
+            <input type="password" name="astronaut_password" required><br><br>
+
+            <div><label>Id капитана</label></div>
+            <input type="text" name="captain_id" required><br><br>
+
+            <div><label>Пароль капитана</label></div>
+            <input type="password" name="captain_token" required><br><br>
+
+            <button type="submit">Доступ</button>
+        </form>
+    </div>
+</body>
+</html>
