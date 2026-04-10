@@ -1,0 +1,33 @@
+.emergency-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: auto;
+    height: auto;
+    background-image: url('/static/img/img_2.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.emblem img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.emergency {
+    margin: 0;
+}
+
+h4 {
+    color: gray;
+}
+
+button {
+    background: blue;
+    color: white;
+}

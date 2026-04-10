@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="login-form">
+    <div class="emblem">
+        <img src="{{ url_for('static', filename='emblem.png') }}" alt="Эмблема миссии">
+    </div>
+    
+    <h2 class="emergency-title">Аварийный доступ</h2>
+    
+    <form method="POST">
+        <div class="form-group">
+            <label>ID астронавта:</label>
+            <input type="text" name="astronaut_id" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Пароль астронавта:</label>
+            <input type="password" name="astronaut_password" required>
+        </div>
+        
+        <div class="form-group">
+            <label>ID капитана/заместителя:</label>
+            <input type="text" name="captain_id" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Токен капитана/заместителя:</label>
+            <input type="password" name="captain_token" required>
+        </div>
+        
+        <button type="submit">Получить доступ</button>
+    </form>
+</div>
+{% endblock %}
